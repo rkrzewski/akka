@@ -236,7 +236,7 @@ The ordering between events is still guaranteed ("evt-b-1" will be sent after "e
 .. _defer-scala:
 
 Deferring actions until preceding persist handlers have executed
------------------------------------------------------------------
+----------------------------------------------------------------
 
 Sometimes when working with ``persistAsync`` you may find that it would be nice to define some actions in terms of
 ''happens-after the previous ``persistAsync`` handlers have been invoked''. ``PersistentActor`` provides an utility method
